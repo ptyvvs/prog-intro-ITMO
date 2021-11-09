@@ -1,0 +1,15 @@
+package expression;
+
+import expression.Abstract;
+
+public class Multiply extends Abstract {
+    public Multiply(UniteExpression c, UniteExpression d) {
+        super(c, d);
+        sign = "*";
+    }
+
+    @Override
+    public int operation(int n1, int n2) {
+        return n1 * n2;
+    }
+}
